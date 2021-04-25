@@ -1,0 +1,22 @@
+done:
+1、Two Sum https://leetcode.com/problems/two-sum/
+unodered_map,快速找到目标
+
+23. Merge k Sorted Lists https://leetcode.com/problems/merge-k-sorted-lists/
+最小堆，利用vector构造堆，algorithm中
+make_heap(vec.begin(), end(), cmp);
+int min = vec.front(); // 最小值
+pop_heap(begin, end, cmp); // 调整最小堆, 将最小值调到vec最后
+vec.pop_back(); // 移除最小值
+vec.push_back(new_val); // 加入新的值
+push_heap(vec.begin(), vec.end(),cmp); // 使满足最小堆
+
+739. Daily Temperatures https://leetcode.com/problems/daily-temperatures/
+利用stack维护一个非递增天气部分。
+
+763. Partition Labels: https://leetcode.com/problems/partition-labels/
+类似双指针，map。
+
+448. Find All Numbers Disappeared in an Array
+https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
+TODO: 1-n数组相关，value和pos的关系。
