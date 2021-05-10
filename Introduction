@@ -11,12 +11,72 @@ vec.pop_back(); // 移除最小值
 vec.push_back(new_val); // 加入新的值
 push_heap(vec.begin(), vec.end(),cmp); // 使满足最小堆
 
+198. House Robber: https://leetcode.com/problems/house-robber/
+
+
+199. Binary Tree Right Side View: https://leetcode.com/problems/binary-tree-right-side-view/
+bfs：二叉树的层次遍历，保存每层的最后一个节点
+层次遍历：利用queue；计数器来取得每层的最后一个节点。
+
+200. Number of Islands： https://leetcode.com/problems/number-of-islands/
+DFS
+
+207. Course Schedule: https://leetcode.com/problems/course-schedule/
+图：prim算法？TODO：
+https://www.cnblogs.com/grandyang/p/4484571.html
+
+208. Implement Trie (Prefix Tree): https://leetcode.com/problems/implement-trie-prefix-tree/
+字典树。
+
+215. Kth Largest Element in an Array: https://leetcode.com/problems/kth-largest-element-in-an-array/
+偷懒法：优先队列，直接sort排序
+标准答案：快排的思想，TODO
+
+226. Invert Binary Tree https://leetcode.com/problems/invert-binary-tree/
+树相关的题目一般使用递归，或者借助stack以及queue来实现非递归的方法
+
+230. Kth Smallest Element in a BST https://leetcode.com/problems/kth-smallest-element-in-a-bst/
+二分查找树，其中序遍历是有序的
+TODO:拓展可以查看二分查找树的构造，维持以及工作原理。二分法也可以、
+
+234. Palindrome Linked List: https://leetcode.com/problems/palindrome-linked-list/
+链表相关操作，原地反转链表（头插法，尾插法），快慢指针，指针操作非空判断。
+
+287. Find the Duplicate Number；https://leetcode.com/problems/find-the-duplicate-number/
+一些思想同448，
+出现重复数字，1-n数字对应下标，n和vec[n]之间一些操作。
+解法一：重复数字的出现形成环
+解法二：二分法多一个数字，出现一边多
+
+295. Find Median from Data Stream: https://leetcode.com/problems/find-median-from-data-stream/
+TODO:
+
+297. Serialize and Deserialize Binary Tree
+https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
+TODO:
+
+300. Longest Increasing Subsequence
+https://leetcode.com/problems/longest-increasing-subsequence/
+最长的递增序列：nums[0~n-1]
+dp[i] = dp[j at(nums[j] < nums[i])]+1 or 1 if前面没有更小的数了。
+
+322. Coin Change: https://leetcode.com/problems/coin-change/
+硬币组合，dp
+
+337. House Robber III: https://leetcode.com/problems/house-robber-iii/
+数据结构树，递归&左右孩子指针。递归过程中存在重复计算的过程，使用memo（map、vector等）进行保存，或者进一步优化成dp实现
+从而降低复杂度。核心思想在于是否包含cur_tree_node：rob cur_tree_node则不能rob左右孩子节点，否则可以。
+
+
+448. Find All Numbers Disappeared in an Array
+https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
+1-n数组相关，value和pos的关系。nums[i]作为下标，重复的数会进行额外操作，缺省的数会缺少操作。
+
 739. Daily Temperatures https://leetcode.com/problems/daily-temperatures/
 利用stack维护一个非递增天气部分。
 
 763. Partition Labels: https://leetcode.com/problems/partition-labels/
 类似双指针，map。
 
-448. Find All Numbers Disappeared in an Array
-https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
-TODO: 1-n数组相关，value和pos的关系。
+TODO:
+416.
