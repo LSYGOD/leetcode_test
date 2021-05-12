@@ -11,8 +11,35 @@ vec.pop_back(); // 移除最小值
 vec.push_back(new_val); // 加入新的值
 push_heap(vec.begin(), vec.end(),cmp); // 使满足最小堆
 
-198. House Robber: https://leetcode.com/problems/house-robber/
+136. Single Number: https://leetcode.com/problems/single-number
+n^n = 0, n^0 = n,亦或本身等于0，亦或0等于该数。
 
+138. Copy List with Random Pointer: https://leetcode.com/problems/copy-list-with-random-pointer/
+链表的深拷贝
+
+139. Word Break: https://leetcode.com/problems/word-break/
+递归，time limit，超时
+使用memo保存已经计算过的状态
+dp：以i结尾的是否能被拆分成dict中的word
+
+146. LRU Cache: https://leetcode.com/problems/lru-cache/
+
+
+148. Sort List: https://leetcode.com/problems/sort-list/
+类似于归并排序，divide into smaller list，sort and merge two sorted lists
+
+152. Maximum Product Subarray： https://leetcode.com/problems/maximum-product-subarray/
+TODO:
+
+160. Intersection of Two Linked Lists：
+https://leetcode.com/problems/intersection-of-two-linked-lists/
+相交链表：借用set效率好像比较慢、set的插入操作。
+从尾部开始
+
+169. Majority Element: https://leetcode.com/problems/majority-element/
+出现次数超过一半的数：排除不同的pair，剩下的数就是
+
+198. House Robber: https://leetcode.com/problems/house-robber/
 
 199. Binary Tree Right Side View: https://leetcode.com/problems/binary-tree-right-side-view/
 bfs：二叉树的层次遍历，保存每层的最后一个节点
