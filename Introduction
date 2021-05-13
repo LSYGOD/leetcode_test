@@ -11,6 +11,40 @@ vec.pop_back(); // 移除最小值
 vec.push_back(new_val); // 加入新的值
 push_heap(vec.begin(), vec.end(),cmp); // 使满足最小堆
 
+96. Unique Binary Search Trees: https://leetcode.com/problems/unique-binary-search-trees/
+f(0) = 1, f(1) = 1, f(2) = f(0)*f(1) + f(1)*f(0)
+f(3) = f(0) * f(2) + f(1) * f(1) + f(2) * f(0)
+
+98. Validate Binary Search Tree：https://leetcode.com/problems/validate-binary-search-tree
+二叉搜索树：左子树的值小于root，右子树的值大于root
+
+101. Symmetric Tree：https://leetcode.com/problems/symmetric-tree
+树是否对称，左子树和右子树对比
+
+102. Binary Tree Level Order Traversal: https://leetcode.com/problems/binary-tree-level-order-traversal
+二叉树的层次遍历，借助queue，计数
+
+105. Construct Binary Tree from Preorder and Inorder Traversal：
+https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal
+先序、中序，后序，使用其中任意两种遍历序列可以确定一个树
+递归，先序找根
+
+114. Flatten Binary Tree to Linked List：https://leetcode.com/problems/flatten-binary-tree-to-linked-list
+树的问题，递归recursion
+
+121. Best Time to Buy and Sell Stock: https://leetcode.com/problems/best-time-to-buy-and-sell-stock
+easy
+related: http://www.cnblogs.com/grandyang/p/4280803.html
+http://www.cnblogs.com/grandyang/p/4281975.html
+http://www.cnblogs.com/grandyang/p/4295761.html
+http://www.cnblogs.com/grandyang/p/4997417.html
+
+124. Binary Tree Maximum Path Sum: https://leetcode.com/problems/binary-tree-maximum-path-sum
+// TODO:think through recursion all cases
+
+128. Longest Consecutive Sequence：https://leetcode.com/problems/longest-consecutive-sequence/
+//TODO:
+
 136. Single Number: https://leetcode.com/problems/single-number
 n^n = 0, n^0 = n,亦或本身等于0，亦或0等于该数。
 
