@@ -11,6 +11,52 @@ vec.pop_back(); // 移除最小值
 vec.push_back(new_val); // 加入新的值
 push_heap(vec.begin(), vec.end(),cmp); // 使满足最小堆
 
+48. Rotate Image: https://leetcode.com/problems/rotate-image
+
+
+49. Group Anagrams:https://leetcode.com/problems/group-anagrams
+找到一个映射关系
+
+53. Maximum Subarray：https://leetcode.com/problems/maximum-subarray (easy)
+dp = nums
+i > 0: dp[i] += dp[i-1] > 0 ? dp[i-1] : 0
+
+55. Jump Game: https://leetcode.com/problems/jump-game
+done：如题
+
+56. Merge Intervals: https://leetcode.com/problems/merge-intervals
+对区间排序后合并
+
+62. Unique Paths：https://leetcode.com/problems/unique-paths
+杨辉三角。f(n,m) = f(n-1,m) + f(n,m-1)
+
+64. Minimum Path Sum: https://leetcode.com/problems/minimum-path-sum
+dp[i][j] = min(dp[i-1][j], dp[i][j-1]) + grid[i][j]
+
+70. Climbing Stairs: https://leetcode.com/problems/climbing-stairs (easy)
+斐波那契数，经典爬楼梯
+
+72. Edit Distance: https://leetcode.com/problems/edit-distance (Hard)
+
+
+75. Sort Colors: https://leetcode.com/problems/sort-colors
+done
+
+76. Minimum Window Substring: https://leetcode.com/problems/minimum-window-substring
+
+78. Subsets: https://leetcode.com/problems/subsets
+
+
+79. Word Search: https://leetcode.com/problems/word-search/
+DFS recursion
+
+84. Largest Rectangle in Histogram: https://leetcode.com/problems/largest-rectangle-in-histogram/
+TODO:
+
+85. Maximal Rectangle: https://leetcode.com/problems/maximal-rectangle/
+TODO:
+
+
 96. Unique Binary Search Trees: https://leetcode.com/problems/unique-binary-search-trees/
 f(0) = 1, f(1) = 1, f(2) = f(0)*f(1) + f(1)*f(0)
 f(3) = f(0) * f(2) + f(1) * f(1) + f(2) * f(0)
